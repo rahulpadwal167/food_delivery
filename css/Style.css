@@ -1,0 +1,217 @@
+﻿/*css reset*/
+{
+    margin:0px;
+    padding:0px;
+}
+#navbar
+{position:relative}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position:sticky;
+}
+    #navbar ul {
+        list-style: none;
+        display: flex;
+        top: 20px;
+    }
+
+    #navbar ul li {
+        text-decoration: none;
+    }
+
+    #navbar ul li a{
+
+        padding:3px 22px;
+        color:red;
+        text-decoration:none;
+        border-radius:20px;
+        display:block;
+    }
+
+    #navbar::before{
+        content:"";
+        background-color:black;
+        position:absolute;
+        height:90%;
+        width:100%;
+        opacity:0.8;
+        z-index:-1;
+        top:0px;
+        left:0px;
+        
+    }
+
+ #navbar ul li a:hover{
+     color:antiquewhite;
+     background-color:gray;
+     border-radius:2px;
+     
+ }
+
+/*logo and image*/
+#logo {
+    margin: 10px 34px;
+}
+
+    #logo img {
+        height: 59px;
+        margin: 3px 6px;
+    }
+
+    /*home section*/
+    #home {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height:500px;
+
+    }
+
+        #home::before {
+            content: "";
+            background: url('../bg1.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 90%;
+            width: 100%;
+            opacity: 0.89;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+        }
+
+.h1-primary {
+    font-size: 4rem;
+    padding: 4px;
+    text-align: center;
+}
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+    padding: 4px;
+}
+        #home h1{
+            color:antiquewhite;
+            text-align:center;
+        }
+        #home p{
+                    color:azure;
+                }
+        .btn{
+            color:red;
+            background-color:black;
+            border-radius:11px;
+            font-size:-0.8rem;
+            cursor:pointer;
+        }
+
+        #services{
+            margin:34px;
+            display:flex;
+        }
+            #services .box {
+                border: 2px solid red;
+                padding: 2px;
+                margin: 2px;
+                border-radius: 35px;
+                background-color: dimgrey;
+                margin-bottom: 20px;
+            }
+            #services .box img {
+                height:160px;
+                margin: auto;
+                display:block;
+            }
+
+/* Clients Section */
+#client-section {
+    position: relative;
+}
+
+    #client-section::before {
+        content: "";
+        position: absolute;
+        background: url('../bg.jpg');
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+    #contact::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url('../contact.jpg') no-repeat center center/cover;
+    }
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+
+    #contact-box form {
+        width: 40%;
+    }
+
+    #contact-box label {
+        font-size: 1.3rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
